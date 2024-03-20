@@ -3,7 +3,7 @@
 ![](./preview.gif)
 
 ## Information
-This script will take an input list of domains and retrieve WHOIS information for them using RDAP. Depending on the TLD the domain is under will determine which RDAP server the request is made on. We are using the [Bootstrap Service Registry for Domain Name Space](https://www.iana.org/assignments/rdap-dns/rdap-dns.xhtml) from [IANA](https://www.iana.org/).
+This script will take an input list of domains and retrieve [WHOIS](https://en.wikipedia.org/wiki/WHOIS) information for them using the [Registration Data Access Protocol](https://en.wikipedia.org/wiki/Registration_Data_Access_Protocol) *(RDAP)*. Depending on the TLD the domain is under will determine which RDAP server the request is made on. We are using the [Bootstrap Service Registry for Domain Name Space](https://www.iana.org/assignments/rdap-dns/rdap-dns.xhtml) from [IANA](https://www.iana.org/).
 
 ###### This is a work in progress still *(stay tuned)*
 

@@ -19,6 +19,22 @@ From my experience, it seems every RDAP server has their employed rate limits. W
 | `-o`, `--output`      | Output file to write successful RDAP data to.                         | `output.json` |
 | `-f`, `--failed`      | Output file to write failed domains to. (optional)                    | `failed.txt`  |
 
+## WHOIS & RDAP Statistics
+
+By comparing the [root TLDS](https://data.iana.org/TLD/tlds-alpha-by-domain.txt) and the [RDAP Bootstrap](https://data.iana.org/rdap/dns.json) data from IANA, along with querying IANA's [WHOIS](https://www.iana.org/whois) server to find other TLD's WHOIS servers, we can formulate coverage statistics on WHOIS/RDAP availability across all available TLDS:
+
+###### RDAP
+| Status  | Results       |
+| ------- | ------------- |
+| RDAP    | 1,174 *(81%)* |
+| No RDAP |   275 *(19%)* |
+
+###### WHOIS
+| Status   | Results       |
+| -------- | ------------- |
+| WHOIS    | 1,253 *(86%)* |
+| No WHOIS |   196 *(14%)* |
+
 ## Roadmap
 - Explore other RDAP servers from RIRs, registrars, IANA *(see [here](https://data.iana.org/rdap/))*
 - Mass domain availability lookups
